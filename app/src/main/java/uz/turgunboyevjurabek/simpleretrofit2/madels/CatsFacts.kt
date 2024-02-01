@@ -3,31 +3,31 @@ package uz.turgunboyevjurabek.simpleretrofit2.madels
 
 import com.google.gson.annotations.SerializedName
 
-data class CatsFacts(
+class CatsFacts(){
     @SerializedName("current_page")
-    val currentPage: Int,
+    val currentPage: Int?=null
     @SerializedName("data")
-    val `data`: List<Data>,
+    val `data`: List<Data>?=null
     @SerializedName("first_page_url")
-    val firstPageUrl: String,
+    val firstPageUrl: String?=null
     @SerializedName("from")
-    val from: Int,
+    val from: Int?=null
     @SerializedName("last_page")
-    val lastPage: Int,
+    val lastPage: Int?=null
     @SerializedName("last_page_url")
-    val lastPageUrl: String,
+    val lastPageUrl: String?=null
     @SerializedName("links")
-    val links: List<Link>,
+    val links: List<Link>?=null
     @SerializedName("next_page_url")
-    val nextPageUrl: String,
+    val nextPageUrl: String?=null
     @SerializedName("path")
-    val path: String,
+    val path: String?=null
     @SerializedName("per_page")
-    val perPage: Int,
+    val perPage: Int?=null
     @SerializedName("prev_page_url")
-    val prevPageUrl: Any,
+    val prevPageUrl: Any?=null
     @SerializedName("to")
-    val to: Int,
+    val to: Int?=null
     @SerializedName("total")
-    val total: Int
-)
+    val total: Int?=null
+}

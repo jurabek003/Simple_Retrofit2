@@ -3,9 +3,11 @@ package uz.turgunboyevjurabek.simpleretrofit2.madels
 
 import com.google.gson.annotations.SerializedName
 
-data class Data(
-    @SerializedName("fact")
-    val fact: String,
-    @SerializedName("length")
-    val length: Int
-)
+ class Data(){
+     val fact: String?=null
+     val length: Int?=null
+     override fun toString(): String {
+         return "Data(fact=$fact, length=$length)"
+     }
+
+ }

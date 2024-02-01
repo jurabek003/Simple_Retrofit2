@@ -7,8 +7,8 @@ import uz.turgunboyevjurabek.simpleretrofit2.madels.CatsFacts
 import uz.turgunboyevjurabek.simpleretrofit2.madels.Data
 
 interface ApiService {
-    @GET("facts/")
-     fun getAllItem():Call<CatsFacts>
+    @GET("facts")
+   suspend fun getAllItem():CatsFacts
 
 
 }
